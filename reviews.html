@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Package Reviews</title>
+	<style>
+        body {
+	font-family: Arial, sans-serif;
+	/* margin: 0;
+	padding: 0; */
+}
+
+header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            /* height: 150px; */
+        }
+/* header h1 {
+	margin: 0;
+} */
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+.review-form label {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form select,
+.review-form textarea {
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.review-form button[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+}
+body {
+font-family: Arial, sans-serif;
+/* margin: 0;
+padding: 0; */
+}
+
+	header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+			/* height: 40px; */
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+
+
+main {
+max-width: 800px;
+margin: 0 auto;
+padding: 1em;
+}
+
+.review-form label {
+display: block;
+margin-bottom: 0.5em;
+}
+
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form select,
+.review-form textarea {
+display: block;
+width: 100%;
+padding: 0.5em;
+margin-bottom: 1em;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.review-form button[type="submit"] {
+background-color: #333;
+color: #fff;
+border: none;
+padding: 0.5em 1em;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.reviews ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.reviews li {
+padding: 1em;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-bottom: 1em;
+}
+
+.rating .star {
+display: inline-block;
+width: 20px;
+height: 20px;
+background-image: url('star-empty.png');
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+.rating .filled {
+background-image: url('star-filled.png');
+}    
+
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Travel Package Reviews</h1>
+	</header>
+	<nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="bookings.html"> Book Now</a>
+        <a href="reviews.html"> reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+	<main>
+		<section class="review-form">
+			<h2>Leave a Review</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="rating">Rating:</label>
+				<select id="rating" name="rating" required>
+					<option value="">Select a rating</option>
+					<option value="5">5 stars</option>
+					<option value="4">4 stars</option>
+					<option value="3">3 stars</option>
+					<option value="2">2 stars</option>
+					<option value="1">1 star</option>
+				</select>
+
+				<label for="review">Review:</label>
+				<textarea id="review" name="review" required></textarea>
+
+				<button type="submit">Submit Review</button>
+			</form>
+		</section>
+
+		<section class="reviews">
+			<h2>Recent Reviews</h2>
+			<ul>
+				<li>
+					<h3>John Doe</h3>
+					<p>Great package, amazing experience!</p>
+					<div class="rating">
+						<span class="star filled"></span>
+						<span class="star filled"></span>
+						<span class="star filled"></span>
+						<span class="star"></span>
+						<span class="star"></span>
+					</div>
+				</li>
+				<li>
+					<h3>Jane Doe</h3>
+					<p>The accommodation was disappointing.</p>
+					<div class="rating">
+						<span class="star filled"></span>
+						<span class="star filled"></span>
+						<span class="star"></span>
+						<span class="star"></span>
+						<span class="star"></span>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>

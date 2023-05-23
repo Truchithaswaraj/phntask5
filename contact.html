@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>College Website</title>
+    <style>
+      header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+        }
+      nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      *{
+	    font-family: 'Roboto', sans-serif;
+	    font-weight: 400;
+      }
+      *:focus {
+	    outline: 0;
+    }
+
+body {
+	background: #f5f8f9;  /* Set background color to #263238*/
+}
+
+h3 {
+	text-align: center;
+}
+
+.container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: #E3F2FD;
+	border-radius: 4px;
+}
+
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+input[type=submit] {
+	background: #64B5F6;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+input[type=submit]:hover {
+	background: #2196F3;
+}
+
+.center {
+	text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us for further details</h1>
+  </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="bookings.html"> Book Now</a>
+      <a href="reviews.html"> reviews</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+    <div class="container">
+      
+        <form action="#" name="contact_form">
+            <label for="first_name">First Name</label>
+            <input name="first_name" type="text" required placeholder="first name"/>
+            <br>
+            <label for="last_name">Last Name</label>
+            <input name="last_name" type="text" required placeholder="last name"/>
+            <br>
+            <label for="email">Email</label>
+            <input name="email" type="email" required placeholder="you@domain.com"/>
+            <br>
+            <label for="message">Message</label><br>
+            <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+            <div class="center">
+                <input type="submit" value="Submit">
+            </div>
+        </form>	
+    </div>
+  </body>
+</html>
